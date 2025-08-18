@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="hr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>O nama | Adria Apartmani</title>
+  <meta name="description" content="Smještaj uz more — rezerviraj svoj odmor u nekoliko klikova.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"LodgingBusiness",
+    "name":"Adria Apartmani",
+    "address":{"@type":"PostalAddress","addressCountry":"HR"},
+    "url":"https://example.com",
+    "telephone":"+385 99 000 000",
+    "amenityFeature":[{"@type":"LocationFeatureSpecification","name":"Wi-Fi","value":true}]
+  }
+  </script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">Adria Apartmani</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="apartmani.html">Apartmani</a></li>
+        <li class="nav-item"><a class="nav-link" href="o-nama.html">O nama</a></li>
+        <li class="nav-item"><a class="nav-link" href="kontakt.html">Kontakt</a></li>
+
+        <!-- slot koji puni script.js (jedna ikona + "Prijava" ili avatar ako je user logiran) -->
+        <li class="nav-item ms-lg-2 js-auth-slot"></li>
+
+        <li class="nav-item ms-lg-2">
+          <a class="btn btn-dark position-relative" href="checkout.html">
+            Rezervacije
+            <span id="cart-badge" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="py-5 bg-light border-bottom">
+  <div class="container" style="max-width:1200px;">
+    <div class="row align-items-center gy-3">
+      <div class="col-lg-8">
+        <h1 class="display-6 fw-bold mb-2">Naša priča</h1>
+        <p class="lead text-secondary mb-0">Od jednog ključa do mreže apartmana — standardi, ljudi i ljubav prema Jadranu.</p>
+      </div>
+      <div class="col-lg-4 text-lg-end">
+        <a class="btn btn-dark btn-lg" href="apartmani.html"><i class="bi bi-search me-2"></i>Pretraži apartmane</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- TIMELINE + SIDEBAR -->
+<section class="py-5">
+  <div class="container" style="max-width:1200px;">
+    <div class="row g-4">
+      <!-- Lijevo: timeline -->
+      <div class="col-lg-8">
+        <div class="text-center mb-5">
+          <span class="badge rounded-pill bg-dark-subtle text-dark mb-2 px-3 py-2">Kronologija</span>
+          <h2 class="h3 fw-bold mb-2">Prekretnice i rast</h2>
+          <p class="text-secondary mb-0">Milestones koji su nas oblikovali.</p>
+        </div>
+<ol class="timeline-pro">
+  <!-- 2014 -->
+  <li class="t-item">
+    <span class="t-dot"></span>
+    <div class="t-card">
+      <div class="t-year text-primary">2014</div>
+      <h3 class="t-title h5 mb-1">Ideja & istraživanje</h3>
+      <div class="t-meta">Mapirali smo lokacije, sezonalnost i očekivanja gostiju.</div>
+      <div class="row g-3">
+        <div class="col-sm-6"><img class="img-fluid rounded-3 shadow-sm" src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?q=80&w=1200&auto=format&fit=crop" alt=""></div>
+        <div class="col-sm-6">
+          <p class="mb-2">Razgovori s vlasnicima i gostima postavili su temelj: <strong>realne fotke</strong>, <strong>brz check-in</strong>, <strong>čistoća bez kompromisa</strong>.</p>
+          <div class="t-badges d-flex flex-wrap gap-2">
+            <span class="badge">Istraživanje</span><span class="badge">Benchmark</span><span class="badge">Strategija</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </li>
+
+  <!-- 2015 -->
+  <li class="t-item">
+    <span class="t-dot"></span>
+    <div class="t-card">
+      <div class="t-year text-primary">2015</div>
+      <h3 class="t-title h5 mb-1">Prvi ključ u Zadru</h3>
+      <div class="t-meta">Naš prvi apartman, prvi gosti i prva 5★ recenzija.</div>
+      <div class="row g-3">
+        <div class="col-sm-6"><img class="img-fluid rounded-3 shadow-sm" src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1200&auto=format&fit=crop" alt=""></div>
+        <div class="col-sm-6">
+          <p class="mb-2">Uveli smo “no-surprise” politiku: sve jasno prikazano prije rezervacije.</p>
+          <div class="t-badges d-flex flex-wrap gap-2">
+            <span class="badge">Transparentnost</span><span class="badge">Čistoća</span><span class="badge">Realne fotke</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </li>
+
+  <!-- 2016 -->
+  <li class="t-item">
+    <span class="t-dot"></span>
+    <div class="t-card">
+      <div class="t-year text-primary">2016</div>
+      <h3 class="t-title h5 mb-1">Standardi & checkliste</h3>
+      <div class="t-meta">Uveli smo detaljne SOP-ove za pripremu i predaju apartmana.</div>
+      <div class="row g-3">
+        <div class="col-sm-8">
+          <ul class="mb-2">
+            <li>Checklista čišćenja s 40+ točaka</li>
+            <li>Foto-verifikacija prije svakog check-ina</li>
+            <li>Jasni kućni red i upute</li>
+          </ul>
+          <div class="t-badges d-flex flex-wrap gap-2">
+            <span class="badge">SOP</span><span class="badge">Kontrola kvalitete</span><span class="badge">Sigurnost</span>
+          </div>
+        </div>
+        <div class="col-sm-4"><img class="img-fluid rounded-3 shadow-sm" src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=1200&auto=format&fit=crop" alt=""></div>
+      </div>
+    </div>
+  </li>
+
+  <!-- 2018 -->
+  <li class="t-item">
+    <span class="t-dot"></span>
+    <div class="t-card">
+      <div class="t-year text-primary">2018</div>
+      <h3 class="t-title h5 mb-1">Širenje na Split i Rovinj</h3>
+      <div class="t-meta">Standardizacija uputa, pametne brave i brži check-in.</div>
+      <div class="row g-3">
+        <div class="col-sm-4"><img class="img-fluid rounded-3 shadow-sm" src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1200&auto=format&fit=crop" alt=""></div>
+        <div class="col-sm-8">
+          <ul class="mb-2">
+            <li>Digitalni vodiči s lokalnim preporukama</li>
+            <li>Pametne brave i samostalni dolazak</li>
+            <li>“Ghost stay” obilazak za kontrolu</li>
+          </ul>
+          <div class="t-badges d-flex flex-wrap gap-2">
+            <span class="badge">Self check-in</span><span class="badge">Lokalni vodiči</span><span class="badge">QC obilazak</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </li>
+
+  <!-- 2019 -->
+  <li class="t-item">
+    <span class="t-dot"></span>
+    <div class="t-card">
+      <div class="t-year text-primary">2019</div>
+      <h3 class="t-title h5 mb-1">Tech stack</h3>
+      <div class="t-meta">Kalendar dostupnosti, dinamične cijene i brži odgovor.</div>
+      <div class="row g-3">
+        <div class="col-sm-6">
+          <p class="mb-2">Centralni kalendar + automatizacije smanjile su preklapanja i ubrzale potvrde.</p>
+          <div class="t-badges d-flex flex-wrap gap-2">
+            <span class="badge">Kalendar</span><span class="badge">Dinamične cijene</span><span class="badge">Automatizacije</span>
+          </div>
+        </div>
+        <div class="col-sm-6"><img class="img-fluid rounded-3 shadow-sm" src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1200&auto=format&fit=crop" alt=""></div>
+      </div>
+    </div>
+  </li>
+
+  <!-- 2021 -->
+  <li class="t-item">
+    <span class="t-dot"></span>
+    <div class="t-card">
+      <div class="t-year text-primary">2021</div>
+      <h3 class="t-title h5 mb-1">Tim & podrška 0–24</h3>
+      <div class="t-meta">Vlastiti housekeeping i centralna podrška.</div>
+      <div class="row g-3">
+        <div class="col-sm-8">
+          <p class="mb-2">Prosječna ocjena raste na <strong>4.8★</strong>, vrijeme odgovora <strong>&lt; 10 min</strong>.</p>
+          <div class="t-badges d-flex flex-wrap gap-2">
+            <span class="badge">0–24</span><span class="badge">Housekeeping</span><span class="badge">Izvještaji</span>
+          </div>
+        </div>
+        <div class="col-sm-4"><img class="img-fluid rounded-3 shadow-sm" src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200&auto=format&fit=crop" alt=""></div>
+      </div>
+    </div>
+  </li>
+
+  <!-- 2022 -->
+  <li class="t-item">
+    <span class="t-dot"></span>
+    <div class="t-card">
+      <div class="t-year text-primary">2022</div>
+      <h3 class="t-title h5 mb-1">Sustainability</h3>
+      <div class="t-meta">Uveli smo eco standarde i lokalne dobavljače.</div>
+      <div class="row g-3">
+        <div class="col-sm-6"><img class="img-fluid rounded-3 shadow-sm" src="https://images.unsplash.com/photo-1523978591478-c753949ff840?q=80&w=1200&auto=format&fit=crop" alt=""></div>
+        <div class="col-sm-6">
+          <ul class="mb-2">
+            <li>Eco sredstava za čišćenje</li>
+            <li>Odvajanje otpada u svim objektima</li>
+            <li>Partnerstva s lokalnim OPG-ovima</li>
+          </ul>
+          <div class="t-badges d-flex flex-wrap gap-2">
+            <span class="badge">Eco</span><span class="badge">Lokalno</span><span class="badge">Odgovorno</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </li>
+
+  <!-- 2024 -->
+  <li class="t-item">
+    <span class="t-dot"></span>
+    <div class="t-card">
+      <div class="t-year text-primary">2024</div>
+      <h3 class="t-title h5 mb-1">Partner portal</h3>
+      <div class="t-meta">Vlasnici imaju uvid u prihode, zauzetost i recenzije.</div>
+      <div class="row g-3">
+        <div class="col-sm-7">
+          <p class="mb-2">Mjesečni izvještaji, kalendar i jednostavna komunikacija na jednom mjestu.</p>
+          <div class="t-badges d-flex flex-wrap gap-2">
+            <span class="badge">Dashboard</span><span class="badge">Izvještaji</span><span class="badge">Transparencija</span>
+          </div>
+        </div>
+        <div class="col-sm-5"><img class="img-fluid rounded-3 shadow-sm" src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1200&auto=format&fit=crop" alt=""></div>
+      </div>
+    </div>
+  </li>
+
+  <!-- 2025 -->
+  <li class="t-item">
+    <span class="t-dot"></span>
+    <div class="t-card">
+      <div class="t-year text-primary">2025</div>
+      <h3 class="t-title h5 mb-1">30+ lokacija & 1500+ gostiju/god.</h3>
+      <div class="t-meta">Mape dostupnosti, jasne cijene i instant potvrda.</div>
+      <div class="row g-3">
+        <div class="col-sm-6">
+          <p class="mb-2">Pokrivamo čitav Jadran i otoke. Fiksni standardi, lokalni šarm.</p>
+          <ul class="mb-2">
+            <li>Prosj. ocjena: <strong>4.8★</strong></li>
+            <li>Odgovor: <strong>&lt; 10 min</strong> (0–24)</li>
+            <li>Bez skrivenih troškova</li>
+          </ul>
+        </div>
+        <div class="col-sm-6"><img class="img-fluid rounded-3 shadow-sm" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop" alt=""></div>
+      </div>
+    </div>
+  </li>
+</ol>
+      </div>
+
+      <!-- Desno: sticky sidebar -->
+      <div class="col-lg-4">
+        <div class="sticky-sidebar">
+          <!-- Brojke -->
+          <div class="card shadow-sm mb-3">
+            <div class="card-body">
+              <h3 class="h6 text-uppercase text-secondary">U brojkama</h3>
+              <div class="d-grid grid-nums">
+                <div class="numbox">
+                  <div class="num">30+</div>
+                  <div class="lbl">lokacija</div>
+                </div>
+                <div class="numbox">
+                  <div class="num">1500+</div>
+                  <div class="lbl">gostiju / god.</div>
+                </div>
+                <div class="numbox">
+                  <div class="num">4.8 ★</div>
+                  <div class="lbl">prosjek ocjena</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kontakt -->
+          <div class="card shadow-sm mb-3">
+            <div class="card-body">
+              <h3 class="h6 text-uppercase text-secondary">Kontakt</h3>
+              <div class="vstack gap-1 small">
+                <div><i class="bi bi-envelope me-2"></i>info@adria-apartmani.hr</div>
+                <div><i class="bi bi-telephone me-2"></i>+385 99 000 000</div>
+              </div>
+              <a href="kontakt.html" class="btn btn-dark w-100 mt-3">Pošalji upit</a>
+            </div>
+          </div>
+
+          <!-- Povjerenje -->
+          <div class="card shadow-sm mb-3">
+            <div class="card-body">
+              <h3 class="h6 text-uppercase text-secondary">Povjerenje</h3>
+              <ul class="list-unstyled small mb-0">
+                <li class="d-flex align-items-center mb-2"><i class="bi bi-shield-check me-2"></i> SafeStay standard</li>
+                <li class="d-flex align-items-center mb-2"><i class="bi bi-key me-2"></i> Pametne brave</li>
+                <li class="d-flex align-items-center"><i class="bi bi-cash-coin me-2"></i> Transparentne cijene</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Mini recenzije -->
+          <div class="card shadow-sm mb-3">
+            <div class="card-body">
+              <h3 class="h6 text-uppercase text-secondary">Gosti kažu</h3>
+              <blockquote class="mini-quote">“Savršeno čisto, check-in 2 minute. Vraćamo se!” <span>— Petra</span></blockquote>
+              <blockquote class="mini-quote">“Fotke = stvarnost. Odlična komunikacija.” <span>— Marko</span></blockquote>
+            </div>
+          </div>
+
+          <!-- Brzi linkovi -->
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h3 class="h6 text-uppercase text-secondary">Brzi linkovi</h3>
+              <div class="d-grid gap-2">
+                <a class="btn btn-outline-dark" href="apartmani.html">Pogledaj sve apartmane</a>
+                <a class="btn btn-outline-dark" href="index.html#mapa">Pogled na karti</a>
+                <a class="btn btn-outline-dark" href="uvjeti.html">Uvjeti &amp; FAQ</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div><!-- /col -->
+    </div>
+  </div>
+</section>
+
+<!-- CTA traka -->
+<section class="py-5 bg-dark text-white">
+  <div class="container">
+    <div class="row align-items-center gy-3">
+      <div class="col-lg-7">
+        <h2 class="h4 fw-bold mb-1">Spremni za idući odmor?</h2>
+        <p class="mb-0 text-white-50">Pretraži 30+ lokacija uz jasne cijene i brzu potvrdu.</p>
+      </div>
+      <div class="col-lg-5 text-lg-end">
+        <a href="apartmani.html" class="btn btn-light btn-lg me-2">Pretraži apartmane</a>
+        <a href="kontakt.html" class="btn btn-outline-light btn-lg">Kontaktiraj nas</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Masonry recenzije -->
+<section class="py-5 bg-light">
+  <div class="container" style="max-width:1200px;">
+    <div class="text-center mb-4">
+      <span class="badge rounded-pill bg-dark-subtle text-dark mb-2 px-3 py-2">Recenzije</span>
+      <h2 class="h4 fw-bold">Što gosti najčešće ističu</h2>
+    </div>
+    <div class="masonry">
+      <div class="m-card">“Lokacija top, sve pješke. Vratit ćemo se.” <span>— Iva</span></div>
+      <div class="m-card">“Tišina, pogled i čistoća 10/10.” <span>— Stefan</span></div>
+      <div class="m-card">“Cijena realna, bez skrivenih troškova.” <span>— Nika</span></div>
+      <div class="m-card">“Pametna brava i kasni check-in spasili stvar.” <span>— Emir</span></div>
+      <div class="m-card">“Apartman identičan fotkama. Preporuka!” <span>— Tea</span></div>
+      <div class="m-card">“Brz odgovor i korisni lokalni savjeti.” <span>— Luka</span></div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer mt-5">
+  <div class="container py-5">
+    <div class="row g-4">
+      <!-- Brand + opis -->
+      <div class="col-md-5">
+        <a class="footer-brand d-inline-flex align-items-center text-decoration-none mb-2" href="index.html">
+          <i class="bi bi-house-door-fill me-2"></i>
+          <span class="fw-bold">Adria Apartmani</span>
+        </a>
+        <p class="text-white-50 mb-2 small">
+          Smještaj uz more — Zadar • Split • Dubrovnik • Rovinj • Pula • Šibenik • Hvar
+        </p>
+        <div class="d-flex gap-2 footer-social">
+          <a class="btn btn-outline-light btn-sm" href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a class="btn btn-outline-light btn-sm" href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a class="btn btn-outline-light btn-sm" href="mailto:info@example.com" aria-label="Email"><i class="bi bi-envelope"></i></a>
+        </div>
+      </div>
+
+      <!-- Navigacija -->
+      <div class="col-6 col-md-3">
+        <h6 class="text-uppercase small text-white-50">Navigacija</h6>
+        <ul class="list-unstyled">
+          <li><a class="footer-link" href="apartmani.html">Apartmani</a></li>
+          <li><a class="footer-link" href="o-nama.html">O nama</a></li>
+          <li><a class="footer-link" href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+
+      <!-- Pravno + lokacija -->
+      <div class="col-6 col-md-4">
+        <h6 class="text-uppercase small text-white-50">Pravno</h6>
+        <ul class="list-unstyled">
+          <li><a class="footer-link" href="uvjeti.html">Uvjeti korištenja</a></li>
+          <li><a class="footer-link" href="politika-privatnosti.html">Privatnost</a></li>
+        </ul>
+        <div class="small text-white-50 mt-2">
+          <i class="bi bi-geo-alt"></i> Hrvatska obala
+        </div>
+      </div>
+    </div>
+
+    <hr class="border-secondary-subtle my-4">
+
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center small text-white-50">
+      <div>© <span id="year"></span> Adria Apartmani</div>
+      <div>
+        Izrada:
+        <a class="footer-link fw-semibold" href="kodeblack.hr" target="_blank" rel="noopener">
+          Kode Black
+        </a>
+        <i class="bi bi-box-arrow-up-right"></i>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
