@@ -239,18 +239,31 @@
   });
 
   // enable/disable submit po validnosti
-  function wireValidity(formId, submitId){
-    const form = document.getElementById(formId);
-    const btn  = document.getElementById(submitId);
-    if(!form || !btn) return;
-    const check = () => {
-      btn.disabled = !form.checkValidity();
-      form.classList.add('was-validated');
-    };
-    form.addEventListener('input', check);
-    form.addEventListener('change', check);
-    check();
-  }
+ function wireValidity(formId, submitId){
+  const form = document.getElementById(formId);
+  const btn  = document.getElementById(submitId);
+  if(!form || !btn) return;
+
+  const check = () => {
+    btn.disabled = !form.checkValidity();
+    // ⚠️ ne dodajemo .was-validated ovdje
+  };
+
+  form.addEventListener('input', check);
+  form.addEventListener('change', check);
+
+  // na submit -> validacija + .was-validated
+  form.addEventListener('submit', (e) => {
+    if (!form.checkValidity()) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
+    form.classList.add('was-validated');
+  });
+
+  check();
+}
+
   wireValidity('login-form','login-submit');
   wireValidity('reg-form','reg-submit');
 

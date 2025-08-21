@@ -27,7 +27,7 @@ const APARTMENTS = [
   {id:26, name:"Kuća Maslina",         city:"Novalja",   price:115, rating:4.6, beds:2, guests:4, img:"slike/slika26.jpg", amenities:["Wi-Fi","Klima","Parking"]},
   {id:27, name:"Old Town Poreč",       city:"Poreč",     price:104, rating:4.5, beds:1, guests:3, img:"slike/slika27.jpg", amenities:["Wi-Fi","Perilica","Klima"]},
   {id:28, name:"Apartman Čiovo",       city:"Trogir",    price:112, rating:4.6, beds:2, guests:4, img:"slike/slika28.jpg", amenities:["Wi-Fi","Balkon","Kuhinja"]},
-  {id:29, name:"Palmizana Loft",       city:"Hvar",      price:175, rating:4.9, beds:2, guests:4, img:"slike/slika29.webp", amenities:["Wi-Fi","Jacuzzi","Pogled"]},
+  {id:29, name:"Palmizana Loft",       city:"Hvar",      price:175, rating:4.9, beds:2, guests:4, img:"slike/slika29.jpg", amenities:["Wi-Fi","Jacuzzi","Pogled"]},
   {id:30, name:"Apartman Slatina",     city:"Opatija",   price:135, rating:4.7, beds:2, guests:4, img:"slike/slika30.jpg", amenities:["Wi-Fi","Klima","Terasa"]}
 ];
 
@@ -153,7 +153,7 @@ function renderAuthNav(){
     </a>
     <ul class="dropdown-menu dropdown-menu-end shadow">
       ${me.role === 'admin' ? `<li><a class="dropdown-item" href="admin.html"><i class="bi bi-shield-lock me-2"></i>Admin</a></li><li><hr class="dropdown-divider"></li>` : ``}
-      <li><a class="dropdown-item" href="#"><i class="bi bi-person me-2"></i>Moj račun</a></li>
+      <li><a class="dropdown-item" href="mojracun.html"><i class="bi bi-person me-2"></i>Moj račun</a></li>
       <li><a class="dropdown-item" href="#" id="logout-link"><i class="bi bi-box-arrow-left me-2"></i>Odjava</a></li>
     </ul>`;
 
@@ -483,3 +483,4 @@ document.addEventListener('DOMContentLoaded', ()=>{
     if(target){ target.value = chip.getAttribute("data-fill") || ""; target.focus(); }
   });
 });
+

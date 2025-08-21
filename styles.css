@@ -567,3 +567,30 @@
 .form-floating > .form-control:not(:placeholder-shown) ~ label {
   transform: scale(.85) translateY(-.6rem) translateX(.15rem);
 }
+/* ——— Moj račun ——— */
+.kb-card { border-radius: 1rem; }
+.kb-pills .nav-link { border-radius: 999px; }
+.kb-pills .nav-link.active { box-shadow: 0 0 0 .15rem rgba(13,110,253,.15); }
+
+.kb-avatar {
+  width: 64px; height: 64px;
+  display: grid; place-items: center;
+  border-radius: 50%;
+  font-size: 28px;
+}
+
+.kb-empty {
+  text-align: center;
+  padding: 3rem 1rem;
+  border: 2px dashed var(--bs-border-color);
+  border-radius: 1rem;
+  background: #fff;
+}
+.kb-empty i { font-size: 36px; opacity: .6; }
+.kb-empty h6 { margin: .75rem 0 .25rem; }
+
+.card .badge { font-weight: 600; }
+
+@media (min-width: 992px) {
+  header .kb-avatar { width: 72px; height: 72px; font-size: 32px; }
+}
